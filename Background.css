@@ -1,0 +1,22 @@
+section{
+    width: 80%;
+    height: 100%;
+    background-color: purple;
+    margin: 0 auto;
+    display: inline;
+}
+
+h1.first{
+    width: 100%;
+    height: 600px;
+    font-size: 100px;
+    color: white;
+    background-image: url(https://c7.alamy.com/comp/2E1PCX3/operating-system-of-web-or-digital-technology-2E1PCX3.jpg);
+}
+h1.second{
+    width: 100%;
+    height: 600px;
+    font-size: 100px;
+    color: white;
+    background-image: url(https://c7.alamy.com/comp/2E1PCX3/operating-system-of-web-or-digital-technology-2E1PCX3.jpg);
+}

@@ -1,0 +1,40 @@
+h1{
+    background-color: aquamarine;
+    border: 1px solid black;
+    margin: 67px;
+    padding: 50px;
+    /* display: none; one can hide this h1 it will not be shown on web but it will be on that site's source code */
+    
+}
+span{
+    /* background-color: rgb(224, 181, 181); */
+    border: 1px solid  black;
+    width: 500px;/*ignored*/
+    height: 300px;/*ignored*/
+    padding: 100px;/* horizontally pushed away but vertically ignored*/
+    margin: 50px;/* horizontally pushed away but vertically ignored*/
+
+} /*span is an inline element, in inline element width and height are ignored. Margin and padding push elements away horizontally but not vertically*/
+
+/*BLOCK elements like h1 breaks the flow of a document. Width , Height, Margin and padding are respected.*/
+
+/*inline block elements behaves like an inline element except width,height ,margin & padding are respected*/
+
+.span{
+    background-color: white;
+    border: 3px solid black;
+    width: 400px;
+    height: 700px;
+    padding: 30px;
+    margin:  27px;
+}
+
+div{
+    background-color: bisque;
+    height: 200px;
+    width: 200px;
+    border: 7px solid greenyellow;
+    box-sizing: border-box;
+    /* display: inline; all the commands will rejected only color will work */ 
+    display: inline-block;
+}

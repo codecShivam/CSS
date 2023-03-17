@@ -1,0 +1,17 @@
+h2 {
+    color: chartreuse;
+    background-color: blue;
+}
+button {
+    color: cyan;
+    background-color: grey;
+}
+p {
+    color:rgb(206, 98, 32);
+    background-color: rgb(25,56,185);
+}
+body{
+    background-color: #25ff46; 
+    /* if we have given #000000 we can write #000 instead of that another example #cc55ff can be written as #c5f */
+}
+/* Semicolon at the last is mandatory however vscode may or not show error but it is mandatory */

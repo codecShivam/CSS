@@ -1,0 +1,17 @@
+body{
+    color: purple;
+}
+section{
+    color: aqua; 
+    /* The button and form others elements like input and button is present in body and section as well as but they are not being colored if u want to color them u have to specifiy them */
+}
+ form{
+    color: chartreuse;
+ }
+ input , button {
+    color: inherit;
+    /* it will be colored as previous command like here it will be form's color chartreuse if we comment the form command then it will be colored as section's command which is aqua */
+ }
+ ::placeholder{
+    color: coral;
+ }

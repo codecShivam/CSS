@@ -1,0 +1,56 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+/* flexbox properties */
+
+
+/* Display property */
+
+#container{
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #9c9d9e;
+    display: flex; 
+   /* flex-direction: row-reverse; */
+   /* justify-content: flex-end; */
+   /* flex-direction: row; */
+   /* justify-content: space-evenly; */
+   /* flex-wrap: wrap; */
+
+   justify-content: center;   
+   align-items: center;
+   align-items: baseline;
+}
+#container div{
+    width: 200px;
+    height: 200px;
+    font-size: 80px;
+    text-align: center;
+}
+
+/*DISPLAY PROPERTY:: by default main axis goes left to right horizontally*/
+/*flex-direction: column-reverse; /*it will reverse and change the diredtion of the axis and make it horizontally but each div is of 200px height and the total height of the container is 500px so it automatically adjust the height of each div and adjust them in 500px*/
+
+
+/* NOTE:WE ALWAYS HAVE TO USE DISPLAY: FLEX; BEFORE USING ANY FLEX PROPERTY */
+
+
+/* FLEX WRAP:: we use this to wrap all the content inside of any element if something is over flowing it will wrap them inside that element by changing position 
+WRAP works on the cross axis means if we wrap something in row than it will adjust the overflowing part in row 
+similarly if we are working with column overflowing part will adjusted in row 
+and if we use wrap reverse it reverse the items in cross axis manner like if our main axis is row than it reverse them in column*/
+
+
+/* JUSTIFY CONTENT WORKS ON THE MAIN AXIS AND ALIGN ITEMS WORKS ON PRINCIPLE AXIS 
+example if we a block at the top left inside a whole page and we want that box to be at the center of the page the we can use justify content center it will make that box at top center position and after that we can use align items center it will works on cross axis and move that box to the center of the page */
+
+
+/* ALIGN ITEMS:: as we know that align items works on cross axis what does it mean to work on cross axis? */
+/* it means that if our main axis is row and cross axis is column and we applies align items property: flex-end so it move that element towards bottom not in horizontal axis end  
+ALIGN ITEMS */

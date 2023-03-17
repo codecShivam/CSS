@@ -1,0 +1,18 @@
+section{
+    width: 500px;
+    height: 500px;
+    background-color: magenta;
+}
+
+#rgba {
+    width: 50%;
+    height: 50%;
+    background-color: rgba(255,255,255,0.9);
+} /*here in rgba the opacity will apply only that elements to whom  id is declared not for the element inside them*/ 
+
+#opacity{
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+    opacity: 0.5;
+} /*here in opacity the transparency will apply on the id element and any other element lying inside that id's element*/

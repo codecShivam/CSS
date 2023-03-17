@@ -1,0 +1,66 @@
+h1{
+    background-color: #2a9d8f;
+    width: 300px;
+    padding: 0.7em;
+    text-align: center;
+    border: 5px solid #264653;
+    font-size: 1.8em;
+    margin: 30px auto;
+    font-family: Courier New ;
+    font-weight: lighter;
+    color: #eae2b7;
+}
+
+h1:nth-of-type(2n){
+    background-color: #e9c46a;
+}
+h1:nth-of-type(3n){
+    background-color: #f4a261;
+}
+h1:nth-of-type(4n){
+    background-color: #e76f51;
+}
+
+section:first-of-type h1:nth-of-type(1){
+    /* transform-origin: top; */
+    /* transform-origin: bottom right; */
+    transform: rotate(45deg); /* go on MDN */ 
+}
+
+section:first-of-type h1:nth-of-type(2){
+    transform: scale(0.6);
+    /* transform: scale(2,1); two times length and same width   */
+    /* transform: scaleY(2); */
+}
+
+section:first-of-type h1:nth-of-type(3){
+    /* transform: translateY(-50px); we can shift this div from one place to another place by using X for x axis and Y for up and down  */
+    transform: translateX(500px);
+}
+section:first-of-type h1:nth-of-type(4){
+    transform: translate(-200px,90px);
+}
+
+
+
+section:nth-of-type(2) h1:nth-of-type(1){
+    transform: skew(30deg);
+}
+section:nth-of-type(2) h1:nth-of-type(2){
+    transform: skew(10deg,8deg);
+}
+
+
+section:nth-of-type(2) h1:nth-of-type(3){
+    transform: skew(30deg) rotate(-20deg) scale(0.8) translateX(200px);
+}
+
+section:nth-of-type(2) h1:nth-of-type(4){
+    transform: translate(-500px) rotate(0.5turn) scaleY(1.5);
+}
+/* if something is present in the h1 then that will also get transform with h1 like if we add a button inside h1 */
+
+/*section:nth-of-type(2){
+    transform: scale(0.2); by using this we can apply this property on every element of this section
+}*/
+

@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+    font-weight: 800;
+    text-decoration: blue underline  double 4px  ;
+    letter-spacing: 7px;
+    font-size: 50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a{
+    text-decoration: none;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    letter-spacing: 4px;
+}
+p{
+    line-height: 2.5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}

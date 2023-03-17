@@ -1,0 +1,139 @@
+/* universal selector is used to select everything icluding each and every thing not commonly used  */
+/* * {
+    background: cyan;
+} */
+
+
+
+/* Element selector this select everything of given type */
+body{
+    background-color: #c3cac0;
+}
+button{
+    font-size: 16px; 
+    background-color: #547adc;
+}
+span{
+    color:cornflowerblue;
+}
+
+
+
+/* Selector list is used to select two or more elements */
+h1,h2 {
+    color: magenta;
+}
+
+
+
+/* ID Selector is used to select specific element of that id and id is unique it can't be used twice for any element it started with # */
+#signup{
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+
+
+/* Class selector used to select elements of certain class, it is not necessary to have all elements of that element like here we have not given tag class to every span elements and we can give this class to any other element too like a element and that will also be changed*/
+.tag{
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 14px;
+}
+
+
+
+
+/* Descendent selector used to select elements nested inside some tags or elelments we need to give space between them  */
+li a{
+    color: teal;
+}
+.post a{
+    color: #457b9d;
+    font-weight: 700;
+}
+footer a{
+    text-decoration: underline;
+}
+
+
+
+/* Adjacent selector is used to select an element one after the element means select that are immediately preceded we can use this with the help of '+' sign  */
+input + button {
+          color: hotpink;
+          background-color: #f1faee;
+}
+
+
+
+/* Direct-Descendent Selector/Direct Child is used to select elements that are direct children of other it is used with the help of greater than sign >  */
+footer > a {
+    color: #668918;
+}    /*  not commonly used */
+
+
+
+/* Attribute Selector is used to select elements with some specific or defined types format given below  */
+input[type="password"] {
+   background-color: #5be5ef;
+}
+/* or  */
+input.text {
+      color: tomato;
+}
+a[href*="google"]{
+    color: magenta; /*not commonly used*/
+}
+
+
+
+/* PSEUDO CLASSES are used to specifies a special state of the selected element(s) it is always started with a colon eg: :active, :checked, :first, :first-child, :hover, :not(), :nth-child(), :nth-of-type(),etc */
+ button:hover{
+    background-color: #e63946;/* when we go on the button it will turn red and */
+    color: #f1faee;                /* the color of text will be white */
+}
+.post button:hover{
+    background-color: rgb(203, 59, 59); /*more specific so it will won against hover button*/
+    color: rgb(221, 224, 226);
+}
+.post a:hover{
+    text-decoration: none;
+}
+
+.post button:active{        /*space is working as descendent selector means nested one*/
+    background-color: #02c39a;
+}
+
+.post:nth-of-type(2n){
+    background-color: #eee1e1;
+}
+
+
+
+/* PSEUDO ELEMENTS are keyword added to selector that let you style a particular part of selected elements and the syntax of this elemests is double colon '::' */
+h2::first-letter{
+    font-size: 50px;
+}
+
+p::first-line{
+    text-decoration: underline;
+    color: purple;
+}
+
+p::selection{
+    background-color: #fcbf49;
+}
+
+
+
+
+/* specificity: it is used to give priority to one over other like if we define two selectors for the same element than the more specific one will execute like id is more specific  */
+/* ID Selectors  >  class,attribute, & pseudo class selectors  >  Element and Pseudo Element selectors */
+/* check on sites */
+
+/* inline styles are most specific than any other selector inline styles means the styles which we can use directly in html file like <a href="#243gs" color: pink;></a>   Not recommended to use*/
+/* !important is used when you want changes to apply on every element of particular element regardless of any other pre defined selectors then we can put !important in last and this will apply on every element it does not cares about which is more specific     not recommended to use */
+
+
+
+

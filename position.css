@@ -1,0 +1,50 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #3d405b;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+}
+
+
+#middle {
+    background-color: blue;
+}
+
+
+#static #middle {
+    position: static;
+    top: 100px;
+}
+
+
+#relative #middle {
+    position: relative;
+    top: -100px;
+    left: 500px;
+}
+
+
+#absolute #middle {
+    position: absolute;
+    /*by using this, the element is removed from the normal document flown and no space is created for the element is page layout. It is positioned to relative to its closest positioned ancestor, if any otherwise it is placed relative to the initial containing block*/
+    top: 50px;
+    left: 50px;
+}
+
+
+#fixed #middle {
+    position: fixed;
+    background-color: aqua;
+    bottom: 0px;
+    right: 0px;
+    text-align: center;
+    text-decoration: solid;
+    border: 6px magenta double;
+    border-radius: 30%;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Verdana;
+    font-style: oblique;
+    line-height: 57px;
+}

@@ -1,0 +1,108 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+ul{
+    border: 1px solid red;
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-evenlyk;
+}
+
+ul,li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+/* @media (width: 800px){ /*Not so important property but just know it it will change the color of and opacity when our web page width will hit exactly 800px */
+/*   h1{
+        color: magenta;
+    }
+    body{
+        opacity: 0.2;
+    }
+} */
+
+/*@media (min-width: 600px) { /*The inside commands will work until unless the width hites less than or equal to 600px
+    h1{
+        color: purple;
+    }
+}similarly for max-width
+We can set boundary by using and in between (min-width) and (max-width) it will work until unless width lies in this range*/
+/* @media (max-width: 1500px){
+    h1{
+        color: rgb(104, 43, 236);
+    }
+}
+
+@media (max-width: 1000px){
+    h1{
+        color: yellow;
+    }
+}
+
+@media (max-width: 500px){
+    h1{
+        color: red;
+    }
+} */
+/*The downward one will dominate upper one and upto 500px color will be red and above that and upto 1000px color will be red similarly works further*/
+
+
+h1 {
+    color: red;
+}
+
+@media (min-width: 500px) {
+    h1 {
+        color: orange;
+    }
+}
+
+@media (min-width: 1000px) {
+    h1 {
+
+        color: yellow;
+    }
+}
+
+@media (min-width: 1500px) {
+    h1 {
+        color: aqua;
+    }
+}
+
+/*It will work same as above here we have written min so above 1500px color aqua and above 1000px and less than 1000px similarly further*/
+
+/* @media (orientation: landscape)
+{
+    body {
+        background-color: aquamarine;
+    }
+} */
+
+
+@media (max-width: 768rem){
+    h1{
+        font-size: 4em;
+    }
+}
+@media (max-width: 576rem){
+    h1{
+        font-size: 3em;
+    }
+}
+
+
